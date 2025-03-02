@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        let digit;
+        digit = "";
+
+        function save_digit(pressed_digit){
+            digit += pressed_digit;
+        }
+
+
+        // let c, d;
+        // c = 10
+        // d = 2 * c;
+        // let result = "10" + 20 - "30";
+        // let a = 10 + 15;
+        // let b = 2 * a;
+        // // print("dergin");
+
+        // if (result > 20)
+        // {
+        // alert("result > 20");
+        // }
+        // else 
+        // {
+        // alert("result < 20");
+        // }
+        // while (result < 30){
+        //     result += 20
+        // }
+        // // for i in range(0, 100):
+
+        // for (let i = 0; i < 100; i++){
+
+        // }
+        // // def f(a, b, c):
+        //     // return a + b + c
+
+        // function f(a, b, c){
+        //     return a + b + c
+        // }
+        // // print(f"Ответ: {result}");
+        // alert(`Ответ: ${result}`);
+
+        // alert(result);
+    </script>
+
+    <div class="calculator">
+        <div class="calculator_first_row">
+        <div class="calculator_output">0</div>
+        <button class="calculator_bttn">X</button>
+        </div>
+
+        <div class="calculator_row">
+        <button class="calculator_bttn">+</button>
+        <button class="calculator_bttn">-</button>
+        <button class="calculator_bttn">*</button>
+        <button class="calculator_bttn">/</button>
+        </div>
+
+        <div class="calculator_row">
+        <button class="calculator_bttn" onclick="save_digit(1)">1</button>
+        <button class="calculator_bttn" onclick="save_digit(2)">2</button>
+        <button class="calculator_bttn" onclick="save_digit(3)">3</button>
+        <button class="calculator_bttn">C</button>
+        </div>
+
+        <div class="calculator_row">
+        <button class="calculator_bttn" onclick="save_digit(4)">4</button>
+        <button class="calculator_bttn" onclick="save_digit(5)">5</button>
+        <button class="calculator_bttn" onclick="save_digit(6)">6</button>
+        <button class="calculator_bttn">=</button>
+
+        </div>
+
+        <div class="calculator_row">
+            <button class="calculator_bttn" onclick="save_digit(7)">7</button>
+            <button class="calculator_bttn" onclick="save_digit(8)">8</button>
+            <button class="calculator_bttn" onclick="save_digit(9)">9</button>
+            <button class="calculator_bttn" onclick="save_digit(0)">0</button>
+
+        </div>
+
+    </div>
+</body>
+</html>
